@@ -74,13 +74,13 @@ a {
   transition: 0.2s;
 }
 
-.control__btn:hover{
+.control__btn:hover {
   background-color: #2e80ce;
   border-color: #2e80ce;
   color: #fff;
 }
 
-.control__icon--next{
+.control__icon--next {
   rotate: 180deg;
 }
 
@@ -469,4 +469,54 @@ a {
 .team__control {
   margin-top: 38px;
   justify-content: center;
+}
+/* Install */
+.install {
+  margin-top: 85px;
+  padding: 95px 0 85px;
+}
+
+.install__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  background-color: #2e80ce;
+  border-radius: 4px;
+  height: 427px;
+}
+
+.install__img {
+  position: absolute;
+  bottom: 0;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+
+.install__content {
+  width: 50%;
+}
+
+.install__heading {
+  color: #fff;
+  width: 489px;
+}
+
+.install__desc {
+  color: #fff;
+  margin-top: 18px;
+}
+
+.install__row {
+  display: flex;
+  margin-top: 38px;
+  column-gap: 20.5px;
+}
+
+.install__btn--img {
+  width: 135px;
+  height: 40px;
+  border-radius: 5px;
 }
