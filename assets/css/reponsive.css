@@ -1,0 +1,96 @@
+/* PC */
+@media (min-width: 992px) {
+    .mobile__header{
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 991.98px) {
+    /* 1. Ẩn navbar trên Tablet/ Mobile */
+    .navbar{
+        display: none;
+    }
+    /* 2. Chuyển logo vào giữa */
+    .header__top{
+        position: relative;
+    }
+
+    .header__logo{
+        position: absolute;
+        left: 50%;
+        translate: -50% -50%;
+    }
+    /* 3. Căn lại vị trí của menu icon */
+    .menu__header--icon{
+        position: absolute;
+        top: 38px;
+        left: 26px;
+        color: #fff;
+        width: 24px;
+        cursor: pointer;
+    }
+        /* 4. Overlay */
+        .menu__overlay{
+            position: fixed;
+            background: rgba(0, 0, 0, 0.3);
+            inset: 0;
+            z-index: 1;
+            /* Bình thường ẩn overlay đi */
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s;
+        }
+        /* 5. Ktra nếu menu__checkbox được check thì hiện overlay */
+        .menu__checkbox:checked ~ .menu__overlay{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* 6. Menu Drawer */
+        .menu__drawer{
+            position: fixed;
+            background-color: #2e1919;
+            inset: 0 40% 0 0;
+            z-index: 2;
+            transform: translateX(-100%);
+            transition: 0.2s;
+            padding: 60px;
+        }
+        /* 7. Ktra nếu menu được check thì hiện menu */
+        .menu__checkbox:checked ~ .menu__drawer{
+            transform: translateX(0);
+        }
+        /* 8. Menu top */
+        .close__menu{
+            width: 24px;
+            color: #fff;
+        }
+
+        .menu__drawer--top{
+            display: flex;justify-content: space-between;
+            align-items: center;
+        }
+
+        #nav__list--mobile{
+            margin-top: 28px;
+        }
+
+        .nav__link{
+            display: block;
+            font-size: 2.4rem;
+        }
+
+        .nav__link:hover{
+            background-color: #00ffff37;
+        }
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+}

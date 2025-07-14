@@ -100,7 +100,7 @@ a {
   padding-top: 30px;
 }
 
-.header-top {
+.header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
