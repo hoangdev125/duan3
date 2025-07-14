@@ -1,94 +1,222 @@
 /* PC */
 @media (min-width: 992px) {
-    .mobile__header{
-        display: none;
-    }
+  .mobile__header {
+    display: none;
+  }
 }
 
 /* Tablet & Mobile */
 @media (max-width: 991.98px) {
-    /* 1. Ẩn navbar trên Tablet/ Mobile */
-    .navbar{
-        display: none;
-    }
-    /* 2. Chuyển logo vào giữa */
-    .header__top{
-        position: relative;
-    }
+  /* 1. Ẩn navbar trên Tablet/ Mobile */
+  .navbar {
+    display: none;
+  }
+  /* 2. Chuyển logo vào giữa */
+  .header__top {
+    position: relative;
+  }
 
-    .header__logo{
-        position: absolute;
-        left: 50%;
-        translate: -50% -50%;
-    }
-    /* 3. Căn lại vị trí của menu icon */
-    .menu__header--icon{
-        position: absolute;
-        top: 38px;
-        left: 26px;
-        color: #fff;
-        width: 24px;
-        cursor: pointer;
-    }
-        /* 4. Overlay */
-        .menu__overlay{
-            position: fixed;
-            background: rgba(0, 0, 0, 0.3);
-            inset: 0;
-            z-index: 1;
-            /* Bình thường ẩn overlay đi */
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.2s;
-        }
-        /* 5. Ktra nếu menu__checkbox được check thì hiện overlay */
-        .menu__checkbox:checked ~ .menu__overlay{
-            opacity: 1;
-            visibility: visible;
-        }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  /* 3. Căn lại vị trí của menu icon */
+  .menu__header--icon {
+    position: absolute;
+    top: 38px;
+    left: 26px;
+    color: #fff;
+    width: 24px;
+    cursor: pointer;
+  }
+  /* 4. Overlay */
+  .menu__overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /* Bình thường ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+  }
+  /* 5. Ktra nếu menu__checkbox được check thì hiện overlay */
+  .menu__checkbox:checked ~ .menu__overlay {
+    opacity: 1;
+    visibility: visible;
+  }
 
-        /* 6. Menu Drawer */
-        .menu__drawer{
-            position: fixed;
-            background-color: #2e1919;
-            inset: 0 40% 0 0;
-            z-index: 2;
-            transform: translateX(-100%);
-            transition: 0.2s;
-            padding: 60px;
-        }
-        /* 7. Ktra nếu menu được check thì hiện menu */
-        .menu__checkbox:checked ~ .menu__drawer{
-            transform: translateX(0);
-        }
-        /* 8. Menu top */
-        .close__menu{
-            width: 24px;
-            color: #fff;
-        }
+  /* 6. Menu Drawer */
+  .menu__drawer {
+    position: fixed;
+    background-color: #2e1919;
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.2s;
+    padding: 60px;
+  }
+  /* 7. Ktra nếu menu được check thì hiện menu */
+  .menu__checkbox:checked ~ .menu__drawer {
+    transform: translateX(0);
+  }
+  /* 8. Menu top */
+  .close__menu {
+    width: 24px;
+    color: #fff;
+  }
 
-        .menu__drawer--top{
-            display: flex;justify-content: space-between;
-            align-items: center;
-        }
+  .menu__drawer--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-        #nav__list--mobile{
-            margin-top: 28px;
-        }
+  #nav__list--mobile {
+    margin-top: 28px;
+  }
 
-        .nav__link{
-            display: block;
-            font-size: 2.4rem;
-        }
+  .nav__link {
+    display: block;
+    font-size: 2.4rem;
+  }
 
-        .nav__link:hover{
-            background-color: #00ffff37;
-        }
+  .nav__link:hover {
+    background-color: #00ffff37;
+  }
 
+  /* Khối Hero */
+  .hero {
+    flex-direction: column;
+    gap: 120px;
+  }
+
+  .hero__content {
+    width: 80%;
+    text-align: center;
+    margin: 22px auto;
+    order: 2;
+  }
+
+  .hero__desc {
+    display: inline-flex;
+  }
+
+  .hero__row {
+    display: inline-flex;
+  }
+
+  .hero__media {
+    order: 1;
+  }
+
+  /* Service */
+  .service__row {
+    flex-direction: column;
+    gap: 56px;
+    text-align: center;
+  }
+
+  .service__row--img {
+    width: 100%;
+  }
+
+  .service__item {
+    width: 100%;
+    text-align: start;
+  }
+  /* Work */
+  .work__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  /* About */
+  .about__media {
+    width: 100%;
+  }
+
+  .about__img--big {
+    width: 100%;
+  }
+
+  .about__img--small {
+    border-radius: 18px;
+    display: none;
+  }
+
+  .about__row {
+    flex-direction: column;
+    gap: 29px;
+  }
+
+  .about__content{
+    width: 100%;
+    text-align: center;
+  }
+
+  .about__content--heading, .about__content--desc{
+    width: 100%;
+  }
+
+  .about__content--heading{
+    margin-bottom: 16px;
+  }
+
+  /* Team */
+  .team__list{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .team__item--thumb{
+    display: inline-block;
+  }
+
+  /* Install */
+  .install__img{
+    display: none;
+  }
+
+  .install__content{
+    width: 100%;
+  }
+
+  /* Blog */
+  .blog__inner{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .blog__content{
+    order: 2;
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog__heading{
+    max-width: 100%;
+  }
+
+  .blog__list{
+    order: 1;
+  }
+
+  /* Appointment */
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .footer__hidden--tablet{
+        display: none;
+    }
+
+    .footer__top{
+        grid-template-columns: 0.5fr 0.5fr 1fr;
+    }
 }
 
 /* Mobile */
