@@ -188,17 +188,20 @@
       <!-- Menu Content -->
       <div class="menu__drawer">
         <div class="menu__drawer--top">
-          <a href=""
-            ><img src="./assets/img/logo.svg" alt="" class="logo"
-          /></a>
+          <a href=""><img src="./assets/img/logo.svg" alt="" class="logo" /></a>
 
-         <label for="menu__checkbox">
-            <svg class="close__menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path fill="currentColor"
+          <label for="menu__checkbox">
+            <svg
+              class="close__menu"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
                 d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
               />
             </svg>
-         </label>
+          </label>
         </div>
         <!-- Nav Mobile -->
         <ul id="nav__list--mobile"></ul>
@@ -209,6 +212,16 @@
           // sao chép
           navMobile.innerHTML = navPC.innerHTML;
         </script>
+
+        <div class="separate"></div>
+  <div class="show-on-mobile">
+          <li class="nav__item">
+            <a href="" class="nav__link">Login</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Sign Up</a>
+          </li>
+  </div>
       </div>
     </div>
     <!-- Main -->
