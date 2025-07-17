@@ -727,7 +727,7 @@ a {
 .footer__form {
   display: flex;
   margin-top: 10px;
-  column-gap: 12px;
+  gap: 12px;
 }
 
 .footer__form--input {
@@ -738,14 +738,13 @@ a {
   background-color: transparent;
   outline: none;
   color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  padding: 0 10px;
 }
 
 .footer__form--input::placeholder {
-  display: inline-block;
-  padding: 10px;
   color: #9ca8b1;
-  font-size: 1.4rem;
-  line-height: 1.86; /* 185.714% */
 }
 
 .footer__form--submit {
@@ -757,7 +756,7 @@ a {
   border: none;
   font-size: 1.4rem;
   font-weight: 600;
-  line-height: 1.86x; /* 185.714% */
+  line-height: 1.86;
   transition: 0.2s;
 }
 
@@ -773,5 +772,3 @@ a {
   font-size: 1.4rem;
   line-height: 1.86; /* 185.714% */
 }
-
-
